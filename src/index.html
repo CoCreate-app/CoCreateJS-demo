@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Demo | CoCreateJS</title>
+		<link rel="icon" href="https://cdn.cocreate.app/favicon.ico" type="image/ico" sizes="16x16">
+	</head>
+
+	<body class="padding:20px">
+
+		<form collection="contacts" document_id="" pass_id="form-fields">
+			<input name="fullname">
+			<button actions="save" class="display:inline margin:10px">Save</button>
+			<button actions="reset" class="display:inline margin:10px background:red">Reset</button>
+		</form>
+
+		<button pass_to="views" pass-document_id="61e700e2a8b6b4001acaa448" class="display:inline margin:10px">Grid</button>
+		<button pass_to="views" pass-document_id="61e700ffa8b6b4001acaa486" class="display:inline margin:10px">List</button>
+
+		<container pass_id="views" collection="views" document_id="61e700e2a8b6b4001acaa448" name="src"></container>
+		
+        <script src="https://cdn.cocreate.app/latest/CoCreate.min.js"></script>
+
+	</body>
+
+</html>

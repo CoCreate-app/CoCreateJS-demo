@@ -11,13 +11,13 @@
 		<form collection="views" document_id="" pass_id="view-form">
 			<input name="name" class="width:100%">
 			<textarea name="src" rows="10" class="width:100%"></textarea>
-			<button actions="saveDocument, reset" class="display:inline margin:10px_0px_10px">Save</button>
-			<button actions="reset" class="display:inline background:red margin-left:10px">Clear</button>
+			<button actions="save, reset" class="display:inline margin:10px">Save</button>
+			<button actions="reset" class="display:inline margin:10px background:red">Reset</button>
 		</form>
 
-		<div class="display:flex flex-wrap:wrap" template_id="grid" fetch-collection="views">
+		<div class="display:flex flex-wrap:wrap" fetch-collection="views" template_id="grid">
 
-			<div class="template card margin:10px padding:20px background:gainsboro:hover" template_id="grid" document_id="{{data._id}}">
+			<div template_id="grid" document_id="{{data._id}}" class="template card margin:10px padding:20px background:gainsboro:hover">
 				<a pass-document_id="{{data._id}}" pass_to="view-form">
 					<h4 collection="{{collection}}" document_id="{{data._id}}" name="name">Name</h4>
 					<h4>{{data._id}}</h4>
