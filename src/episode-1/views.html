@@ -17,10 +17,10 @@
 
 		<div class="display:flex flex-wrap:wrap" fetch-collection="views" template_id="grid">
 
-			<div template_id="grid" document_id="{{data._id}}" class="template card margin:10px padding:20px background:gainsboro:hover">
-				<a pass-document_id="{{data._id}}" pass_to="view-form">
-					<h4 collection="{{collection}}" document_id="{{data._id}}" name="name">Name</h4>
-					<h4>{{data._id}}</h4>
+			<div template_id="grid" document_id="{{document._id}}" class="template card margin:10px padding:20px background:gainsboro:hover">
+				<a actions="pass" pass-document_id="{{document._id}}" pass_to="view-form">
+					<h4>{{document.name}}</h4>
+					<h4>{{document._id}}</h4>
 				</a>
 			</div>
 
